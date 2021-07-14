@@ -26,7 +26,19 @@ class ViewController: UIViewController {
     
     @IBAction func imageClicked(_ sender: UIButton) {
    
-        imageButton.setImage(images[Int.random(in: 0...2)], for: .normal)
+        var previousNumber: UInt32? // used in randomNumber()
+
+        func randomNumber() -> UInt32 {
+            var randomNumber = arc4random_uniform(3)
+            while previousNumber == randomNumber {
+                randomNumber = arc4random_uniform(3)
+            }
+            previousNumber = randomNumber
+            return randomNumber
+        }
+        
+        imageButton.setImage(images[Int(randomNumber())], for: .normal)
+        
         UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
             self.imageButton.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
         }) { (_) in
