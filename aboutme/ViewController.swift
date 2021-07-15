@@ -11,15 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var marinaImage: UIButton!
     @IBOutlet weak var imageButton: UIButton!
     static var instance: ViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         ViewController.instance = self
+        marinaImage.isUserInteractionEnabled = true
+        marinaImage.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(ViewController.moveImage(_:))))
 
     }
-   // var active = true
     
     let images = [UIImage(named: "new pfp 1"), UIImage(named: "IMG_0839 1"), UIImage(named: "IMG_0618 1"), UIImage(named: "dinoimg"), UIImage(named: "IMG_4579 1"), UIImage(named: "IMG_8501 1")]
     var count = 0
@@ -58,7 +60,11 @@ class ViewController: UIViewController {
              }
     }
     
-   
+    @objc func moveImage(_ recognizer: UIPanGestureRecognizer) {
+        let translation: CGPoint = recognizer.translation(in: self.view)
+        recognizer.view?.center = CGPoint(x: recognizer.view!.center.x + translation.x, y: recognizer.view!.center.y + translation.y)
+        recognizer.setTranslation(CGPoint(x: 0, y: 0), in: self.view)
+    }
    
 
 }

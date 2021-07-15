@@ -60,6 +60,7 @@
                     <navigationItem key="navigationItem" id="CW5-pR-NfK"/>
                     <connections>
                         <outlet property="imageButton" destination="LO8-ZB-FVr" id="tIV-fz-HeY"/>
+                        <outlet property="marinaImage" destination="LO8-ZB-FVr" id="2ag-r1-dGB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
