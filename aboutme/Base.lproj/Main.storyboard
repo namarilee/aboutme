@@ -25,7 +25,7 @@
                                         <state key="normal" title="Button" image="Group 1"/>
                                         <connections>
                                             <action selector="aboutMeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do7-r1-wqb"/>
-                                            <segue destination="YI7-3P-Va0" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="1AT-ey-MAx"/>
+                                            <segue destination="YI7-3P-Va0" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="1AT-ey-MAx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -57,6 +57,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CW5-pR-NfK"/>
                     <connections>
                         <outlet property="imageButton" destination="LO8-ZB-FVr" id="tIV-fz-HeY"/>
                     </connections>
@@ -80,33 +81,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-SU-UdR">
-                                <rect key="frame" x="12" y="195" width="129" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 4"/>
-                                <connections>
-                                    <action selector="igButtonClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="kdt-lH-BRO"/>
-                                    <action selector="igClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="evR-6e-jRa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-du-zyQ">
-                                <rect key="frame" x="143" y="195" width="129" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 3"/>
-                                <connections>
-                                    <action selector="spotifyClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="Xzs-ba-L0T"/>
-                                    <action selector="spotifyClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="vvb-LD-AtT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG6-LO-1TF">
-                                <rect key="frame" x="272" y="195" width="129" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 2"/>
-                                <connections>
-                                    <action selector="discordClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="CG9-NH-niA"/>
-                                    <action selector="discordClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="oCg-XE-Bsx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• 16 years old" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6m-Cy-UJh">
                                 <rect key="frame" x="32" y="375" width="220" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,6 +116,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-SU-UdR">
+                                <rect key="frame" x="12" y="195" width="129" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Group 4"/>
+                                <connections>
+                                    <action selector="igButtonClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="kdt-lH-BRO"/>
+                                    <action selector="igClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="evR-6e-jRa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-du-zyQ">
+                                <rect key="frame" x="143" y="195" width="129" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Group 3"/>
+                                <connections>
+                                    <action selector="spotifyClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="Xzs-ba-L0T"/>
+                                    <action selector="spotifyClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="vvb-LD-AtT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG6-LO-1TF">
+                                <rect key="frame" x="272" y="195" width="129" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Group 2"/>
+                                <connections>
+                                    <action selector="discordClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="CG9-NH-niA"/>
+                                    <action selector="discordClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="oCg-XE-Bsx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YK-V7-Ejc">
+                                <rect key="frame" x="21" y="52" width="82" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Group 5"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="VWZ-Kp-wlu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85541679919369429" green="0.87593611930207504" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2gv-uw-mlF"/>
@@ -162,6 +171,7 @@
         <image name="Group 2" width="387" height="456"/>
         <image name="Group 3" width="258" height="304"/>
         <image name="Group 4" width="258" height="304"/>
+        <image name="Group 5" width="110" height="79"/>
         <image name="new pfp 1" width="840" height="840"/>
     </resources>
 </document>
