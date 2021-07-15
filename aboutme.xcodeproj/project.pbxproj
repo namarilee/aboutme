@@ -16,6 +16,7 @@
 		7A62636D269F7DB300CA4FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A62636B269F7DB300CA4FB3 /* LaunchScreen.storyboard */; };
 		7A626378269F7DB500CA4FB3 /* aboutmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A626377269F7DB500CA4FB3 /* aboutmeTests.swift */; };
 		7A626383269F7DB500CA4FB3 /* aboutmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A626382269F7DB500CA4FB3 /* aboutmeUITests.swift */; };
+		7A626391269FB7BA00CA4FB3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A626390269FB7B900CA4FB3 /* AboutMePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A62637E269F7DB500CA4FB3 /* aboutmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aboutmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A626382269F7DB500CA4FB3 /* aboutmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutmeUITests.swift; sourceTree = "<group>"; };
 		7A626384269F7DB500CA4FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A626390269FB7B900CA4FB3 /* AboutMePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				7A62635F269F7D9E00CA4FB3 /* SceneDelegate.swift */,
 				7A626361269F7D9E00CA4FB3 /* ViewController.swift */,
 				7A626363269F7D9E00CA4FB3 /* Main.storyboard */,
+				7A626390269FB7B900CA4FB3 /* AboutMePage.swift */,
 				7A626369269F7DB300CA4FB3 /* Assets.xcassets */,
 				7A62636B269F7DB300CA4FB3 /* LaunchScreen.storyboard */,
 				7A62636E269F7DB300CA4FB3 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				7A626362269F7D9E00CA4FB3 /* ViewController.swift in Sources */,
 				7A626368269F7D9E00CA4FB3 /* aboutme.xcdatamodeld in Sources */,
+				7A626391269FB7BA00CA4FB3 /* AboutMePage.swift in Sources */,
 				7A62635E269F7D9D00CA4FB3 /* AppDelegate.swift in Sources */,
 				7A626360269F7D9E00CA4FB3 /* SceneDelegate.swift in Sources */,
 			);

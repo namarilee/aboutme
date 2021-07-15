@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--About Me Page-->
         <scene sceneID="h1r-IQ-d8C">
             <objects>
-                <viewController id="YI7-3P-Va0" sceneMemberID="viewController">
+                <viewController id="YI7-3P-Va0" customClass="AboutMePage" customModule="aboutme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ncv-31-lWn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Group 4"/>
                                 <connections>
+                                    <action selector="igButtonClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="kdt-lH-BRO"/>
                                     <action selector="igClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="evR-6e-jRa"/>
                                 </connections>
                             </button>
@@ -93,6 +94,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Group 3"/>
                                 <connections>
+                                    <action selector="spotifyClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="Xzs-ba-L0T"/>
                                     <action selector="spotifyClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="vvb-LD-AtT"/>
                                 </connections>
                             </button>
@@ -102,6 +104,7 @@
                                 <state key="normal" image="Group 2"/>
                                 <connections>
                                     <action selector="discordClicked:" destination="heH-bY-bkg" eventType="touchUpInside" id="CG9-NH-niA"/>
+                                    <action selector="discordClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="oCg-XE-Bsx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• 16 years old" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6m-Cy-UJh">
@@ -144,6 +147,9 @@
                         <viewLayoutGuide key="safeArea" id="2gv-uw-mlF"/>
                     </view>
                     <navigationItem key="navigationItem" id="PtR-VC-w4i"/>
+                    <connections>
+                        <outlet property="igButton" destination="GXd-SU-UdR" id="yS3-Nd-82l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syQ-X9-ZwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="heH-bY-bkg" userLabel="Exit" sceneMemberID="exit"/>
