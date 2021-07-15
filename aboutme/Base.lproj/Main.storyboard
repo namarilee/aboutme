@@ -148,6 +148,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Group 5"/>
                                 <connections>
+                                    <action selector="backButtonClicked:" destination="YI7-3P-Va0" eventType="touchUpInside" id="cca-b0-kAF"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="VWZ-Kp-wlu"/>
                                 </connections>
                             </button>
@@ -156,9 +157,6 @@
                         <viewLayoutGuide key="safeArea" id="2gv-uw-mlF"/>
                     </view>
                     <navigationItem key="navigationItem" id="PtR-VC-w4i"/>
-                    <connections>
-                        <outlet property="igButton" destination="GXd-SU-UdR" id="yS3-Nd-82l"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syQ-X9-ZwY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="heH-bY-bkg" userLabel="Exit" sceneMemberID="exit"/>

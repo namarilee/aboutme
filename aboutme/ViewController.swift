@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
    // var active = true
     
-     let images = [UIImage(named: "new pfp 1"), UIImage(named: "IMG_0839 1"), UIImage(named: "IMG_0618 1")]
+    let images = [UIImage(named: "new pfp 1"), UIImage(named: "IMG_0839 1"), UIImage(named: "IMG_0618 1"), UIImage(named: "dinoimg"), UIImage(named: "IMG_4579 1"), UIImage(named: "IMG_8501 1")]
     var count = 0
     
     
@@ -30,9 +30,9 @@ class ViewController: UIViewController {
         var previousNumber: UInt32? // used in randomNumber()
 
         func randomNumber() -> UInt32 {
-            var randomNumber = arc4random_uniform(3)
+            var randomNumber = arc4random_uniform(6)
             while previousNumber == randomNumber {
-                randomNumber = arc4random_uniform(3)
+                randomNumber = arc4random_uniform(6)
             }
             previousNumber = randomNumber
             return randomNumber
@@ -47,19 +47,6 @@ class ViewController: UIViewController {
     @IBAction func aboutMeClicked(_ sender: UIButton) {
         animateButton(sender)
     }
-    
-//    @IBAction func igClicked(_ sender: UIButton) {
-//        animateButton(sender)
-//    }
-//
-//    @IBAction func spotifyClicked(_ sender: UIButton) {
-//        animateButton(sender)
-//    }
-//
-//    @IBAction func discordClicked(_ sender: UIButton) {
-//        animateButton(sender)
-//
-//    }
     
     func animateButton(_ buttonToAnimate: UIView) {
         UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
