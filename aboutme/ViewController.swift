@@ -24,8 +24,6 @@ class ViewController: UIViewController {
     }
     
     let images = [UIImage(named: "new pfp 1"), UIImage(named: "IMG_0839 1"), UIImage(named: "IMG_0618 1"), UIImage(named: "dinoimg"), UIImage(named: "IMG_4579 1"), UIImage(named: "IMG_8501 1")]
-    var count = 0
-    
     
     @IBAction func imageClicked(_ sender: UIButton) {
    

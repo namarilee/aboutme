@@ -34,13 +34,7 @@ class AboutMePage: UIViewController {
     }
     
     func loadPage(link: String) {
-//        let webView = WKWebView(frame: view.frame)
-//        view.addSubview(webView)
         let url = URL(string: link)!
-//        let request = URLRequest(url: url)
-//        webView.load(request)
-        
         UIApplication.shared.open(url)
-
     }
 }
